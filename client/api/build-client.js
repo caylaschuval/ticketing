@@ -5,7 +5,7 @@ const buildClient = ({ req }) => {
     // we are in server
     // http://SERVICENAME.NAMESPACE.svc.cluster.local
     return axios.create({
-      baseURL: 'https://www.ticketing-app-prod.makeup/',
+      baseURL: 'http://www.ticketing-app-prod.makeup/',
       headers: req.headers
     })
   }
